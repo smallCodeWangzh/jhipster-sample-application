@@ -1,0 +1,44 @@
+
+
+/**
+ *	实体Link 
+ *   实体名必须首字母大写，否则报错
+ *   先写属性名，再写类型
+ */
+entity Link {
+	id String,
+    name String,
+    url String
+}
+
+//
+entity Customer {
+	id String
+    name String
+    password String
+}
+
+entity Category {
+ 	id String,
+    code Long
+    name String
+}
+
+entity Article {
+  id String,
+  author String,
+  clickTimees Integer,
+  content String,
+  /**
+  * 日期类型数据类型为 LocalDate
+  */
+  publishDate LocalDate,
+  title String
+} 
+
+/**
+* 关系 
+*/
+relationship ManyToOne {
+ Article{category} to Category
+}
