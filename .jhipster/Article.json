@@ -1,0 +1,46 @@
+{
+  "name": "Article",
+  "fields": [
+    {
+      "fieldName": "author",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "clickTimees",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "content",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "publishDate",
+      "fieldType": "LocalDate",
+      "javadoc": "日期类型数据类型为 LocalDate"
+    },
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "category",
+      "otherEntityRelationshipName": "article",
+      "relationshipName": "category",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20200628044325",
+  "entityTableName": "article",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}
