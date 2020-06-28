@@ -1,0 +1,30 @@
+{
+  "jhipsterSampleApplicationApp": {
+    "article": {
+      "home": {
+        "title": "Articles",
+        "createLabel": "Create a new Article",
+        "createOrEditLabel": "Create or edit a Article",
+        "notFound": "No Articles found"
+      },
+      "created": "A new Article is created with identifier {{ param }}",
+      "updated": "A Article is updated with identifier {{ param }}",
+      "deleted": "A Article is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Article {{ id }}?"
+      },
+      "detail": {
+        "title": "Article"
+      },
+      "author": "Author",
+      "clickTimees": "Click Timees",
+      "content": "Content",
+      "publishDate": "Publish Date",
+      "title": "Title",
+      "category": "Category",
+      "help": {
+        "publishDate": "日期类型数据类型为 LocalDate"
+      }
+    }
+  }
+}
